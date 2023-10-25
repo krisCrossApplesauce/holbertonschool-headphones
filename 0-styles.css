@@ -1,0 +1,61 @@
+/*  BASIC STUFF  */
+:root {
+
+	/* colors */
+	--accent-color: #FF6565;
+	--light-color: #FFFFFF;
+	--dark-color: #071629;
+
+	/* - */
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: Source Sans Pro;
+	text-align: center;
+}
+
+section {
+	padding: 5rem 0;
+}
+
+button {
+}
+/* END OF BASIC STUFF */
+
+
+.background_image {
+	background-image: url(images_fonts/background.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+/*  HEADER  */
+.header {
+	padding: 0 0 3rem;
+	color: var(--light-color);
+	display: flex;
+	justify-content: space-between;
+}
+
+.menu {
+	display: inline-flex;
+	justify-content: space-between;
+}
+/*  END OF HEADER  */
+
+
+/*  SECTION 0  */
+.section_0 {
+	color: var(--light-color);
+}
+/*  END OF SECTION 0  */
+
+
+/*  MOBILE LAYOUT  */
+@media only screen and (max-width: 480px) {
+}
