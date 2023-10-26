@@ -233,7 +233,44 @@ button:hover {
 	font-size: 2rem;
 	font-weight: bold;
 }
+
+.section_3 form {
+	display: inline-flex;
+	flex-direction: column;
+	text-align: left;
+}
+
+.section_3 form div {
+	display: inline-flex;
+	width: 335px;
+}
+
+.section_3 form div label {
+	font-size: 0.75rem;
+	font-weight: bold;
+	padding-right: 5px;
+}
+
+.section_3 form div input {
+	border: none;
+	flex: 1 1 auto;
+}
+
+/* this (below) doesn't work for some reason... ,'( */
+.section_3 form div input:focus {
+	border: 1px solid var(--dark-color);
+}
+
+.section_3 form img {
+	padding: 0;
+	margin: 0.75rem 0 2rem;
+}
+
+.section_3 form .last{
+	margin: 0.75rem 0 0;
+}
 /*  END OF SECTION 3  */
+
 
 
 /*  TABLET LAYOUT  */
