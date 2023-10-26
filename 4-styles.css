@@ -1,0 +1,323 @@
+/*  BASIC STUFF  */
+:root {
+
+	/* colors */
+	--accent-color: #FF6565;
+	--light-color: #FFFFFF;
+	--dark-color: #071629;
+
+	/* - */
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	font-family: sans-serif;
+	text-align: center;
+	word-wrap: break-word;
+	line-height: 1.75;
+}
+
+main {
+	margin: 0;
+}
+
+section {
+	width: 75%;
+	margin: auto auto;
+	padding: 5rem 0;
+}
+
+button {
+	box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.50);
+	background-color: var(--accent-color);
+	color: var(--light-color);
+	border: none;
+	border-radius: 3rem;
+	padding: 1rem 2rem;
+}
+
+button:hover {
+	background-color: #FF4545;
+}
+/* END OF BASIC STUFF */
+
+
+.background_image_0 {
+	margin: 0;
+	background-image: url(images/background_0.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 800px;
+}
+
+/*  HEADER  */
+.header {
+	padding: 2rem 0 0;
+	margin: auto auto 13rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header img {
+	height: 35px;
+}
+
+.header div {
+	display: inline-flex;
+	justify-content: space-between;
+}
+
+.header div a {
+	color: var(--light-color);
+	text-decoration: none;
+	font-size: 0.75rem;
+	font-weight: bold;
+	margin: 0 0 0 2.5rem;
+}
+
+.header div a:hover {
+	color: var(--accent-color);
+}
+/*  END OF HEADER  */
+
+
+/*  SECTION 0  */
+.section_0 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 3rem;
+	color: var(--light-color);
+}
+
+.section_0 div {
+	max-width: 700px;
+}
+
+.section_0 .h1 {
+	font-size: 2rem;
+}
+
+.section_0 .h1, .section_0 .h2 {
+	font-weight: bold;
+}
+
+.section_0 div .p {
+	padding: 2rem 0 0;
+}
+/*  END OF SECTION 0  */
+
+
+/*  SECTION 1  */
+.section_1 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 3rem;
+	color: var(--dark-color);
+	padding: 6rem 0;
+}
+
+.section_1 .h1 {
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+.section_1 .p1 {
+	max-width: 700px;
+	padding-bottom: 1rem;
+}
+
+.section_1 .topics {
+	width: 100%;
+	display: inline-flex;
+	align-items: flex-end;
+	justify-content: space-between;
+}
+
+.section_1 .topic {
+	width: 200px;
+	padding: 2rem 0;
+}
+
+.section_1 .topic .h2 {
+	font-size: 1.125rem;
+	font-weight: bold;
+	padding: 0.6rem 0;
+}
+
+.section_1 .topic .p2 {
+	font-size: .75rem;
+}
+/*  END OF SECTION 1  */
+
+
+/*  SECTION 2  */
+.background_image_2 {
+	background-image: url(images/background_2.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.section_2 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 3rem;
+	padding: 7rem 0 0;
+	color: var(--light-color);
+}
+
+.section_2 .h1 {
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+.section_2 .p1 {
+	max-width: 700px;
+}
+
+.section_2 .results {
+	width: 100%;
+	display: inline-flex;
+	align-items: flex-end;
+	justify-content: space-between;
+}
+
+.section_2 .results .result {
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 20%;
+}
+
+.section_2 .result img {
+	width: 190px;
+	height: 190px;
+	z-index: 1;
+}
+
+.section_2 .result .words {
+	grid-column-start: 1;
+	z-index: 2;
+}
+
+.section_2 .result .h2 {
+	font-size: 2.875rem;
+	font-weight: bold;
+}
+
+.section_2 .result .p2 {
+	font-size: 0.75rem;
+}
+/*  END OF SECTION 2  */
+
+
+/*  SECTION 3  */
+.section_3 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 3rem;
+	padding: 5rem 0 10rem;
+	color: var(--dark-color);
+}
+
+.section_3 .h {
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+.section_3 form {
+	display: inline-flex;
+	flex-direction: column;
+	text-align: left;
+}
+
+.section_3 form div {
+	display: inline-flex;
+	width: 335px;
+}
+
+.section_3 form div label {
+	font-size: 0.75rem;
+	font-weight: bold;
+	padding-right: 5px;
+}
+
+.section_3 form div input {
+	border: none;
+	flex: 1 1 auto;
+}
+
+/* this (below) doesn't work for some reason... ,'( */
+.section_3 form div input:focus {
+	border: 1px solid var(--dark-color);
+}
+
+.section_3 form img {
+	padding: 0;
+	margin: 0.75rem 0 2rem;
+}
+
+.section_3 form .last{
+	margin: 0.75rem 0 0;
+}
+/*  END OF SECTION 3  */
+
+
+/*  FOOTER  */
+footer {
+	background-color: var(--dark-color);
+	color: var(--light-color);
+	padding: 6rem 0 2.5rem;
+}
+
+footer .container {
+	width: 75%;
+	margin: auto auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+footer .container img {
+	height: 30px;
+	flex: 0 0 0;
+}
+
+footer .container .logo {
+	height: 35px;
+}
+
+footer .copyright {
+	font-size: 0.66rem;
+	opacity: 35%;
+	padding-top: 5rem;
+}
+/*  END OF FOOTER  */
+
+
+
+/*  TABLET LAYOUT  */
+@media only screen and (min-width: 480px) and (max-width: 1024px) {
+	.section_1 .topics, .section_2 .results {
+		width: 70%;
+		flex-wrap: wrap;
+	}
+}
+
+/*  MOBILE LAYOUT  */
+@media only screen and (max-width: 480px) {
+	.section_1 .topics, .section_2 .results {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+}
